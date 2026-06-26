@@ -1,0 +1,32 @@
+{
+  "name": "digital-daily-market",
+  "version": "1.0.0",
+  "description": "Modern crypto trading platform with real-time charts and portfolio tracking",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "lerna run dev --parallel",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "format": "lerna run format",
+    "start": "node backend/dist/app.js"
+  },
+  "keywords": [
+    "crypto",
+    "trading",
+    "blockchain",
+    "bitcoin",
+    "ethereum",
+    "binance",
+    "kraken"
+  ],
+  "author": "empirehub01",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^7.1.0"
+  }
+}

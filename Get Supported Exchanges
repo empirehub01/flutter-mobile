@@ -1,0 +1,31 @@
+GET /market/exchanges
+
+Response: 200
+{
+  "exchanges": [
+    {
+      "id": "binance",
+      "name": "Binance",
+      "available": true,
+      "features": ["trading", "prices", "charts"]
+    },
+    {
+      "id": "kraken",
+      "name": "Kraken",
+      "available": true,
+      "features": ["trading", "prices"]
+    },
+    {
+      "id": "moonpay",
+      "name": "Moonpay",
+      "available": true,
+      "features": ["prices"]
+    },
+    {
+      "id": "coinmama",
+      "name": "Coinmama",
+      "available": true,
+      "features": ["prices"]
+    }
+  ]
+}

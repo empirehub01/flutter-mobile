@@ -1,0 +1,9 @@
+POST /trading/orders/:orderId/cancel
+Authorization: Bearer <token>
+
+Response: 200
+{
+  "orderId": "order-id",
+  "status": "CANCELLED",
+  "timestamp": "2026-05-27T12:05:00Z"
+}

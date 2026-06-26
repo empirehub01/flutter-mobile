@@ -1,0 +1,15 @@
+POST /auth/login
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "securepassword123"
+}
+
+Response: 200
+{
+  "userId": "user-id",
+  "email": "user@example.com",
+  "token": "jwt-token",
+  "expiresIn": "7d"
+}

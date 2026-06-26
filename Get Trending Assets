@@ -1,0 +1,18 @@
+GET /market/trending
+
+Query Parameters:
+  limit: number (default: 10)
+
+Response: 200
+{
+  "trending": [
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "price": 45230.50,
+      "changePercent24h": 5.2,
+      "volume24h": 25000000000,
+      "marketCap": 900000000000
+    }
+  ]
+}

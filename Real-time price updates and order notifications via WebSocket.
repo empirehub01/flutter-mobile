@@ -1,0 +1,14 @@
+const ws = new WebSocket('ws://localhost:3001/ws');
+
+// Subscribe to price updates
+ws.send(JSON.stringify({
+  type: 'subscribe',
+  channel: 'prices',
+  symbols: ['BTC', 'ETH']
+}));
+
+// Listen for updates
+ws.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+  console.log('Price update:', data);
+};

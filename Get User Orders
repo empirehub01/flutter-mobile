@@ -1,0 +1,26 @@
+GET /trading/orders
+Authorization: Bearer <token>
+
+Query Parameters:
+  status: string (PENDING, FILLED, CANCELLED)
+  symbol: string (optional)
+  limit: number (default: 50)
+  offset: number (default: 0)
+
+Response: 200
+{
+  "orders": [
+    {
+      "orderId": "order-id",
+      "symbol": "BTC",
+      "type": "BUY",
+      "quantity": 0.5,
+      "price": 45230.50,
+      "status": "FILLED",
+      "timestamp": "2026-05-27T12:00:00Z"
+    }
+  ],
+  "total": 25,
+  "limit": 50,
+  "offset": 0
+}

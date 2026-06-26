@@ -1,0 +1,12 @@
+GET /portfolio/balance
+Authorization: Bearer <token>
+
+Response: 200
+{
+  "totalBalance": 100000.00,
+  "cash": 50000.00,
+  "investedValue": 50000.00,
+  "unrealizedGainLoss": 1500.00,
+  "unrealizedGainLossPercent": 3.0,
+  "currency": "USD"
+}

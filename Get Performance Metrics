@@ -1,0 +1,16 @@
+GET /portfolio/performance
+Authorization: Bearer <token>
+
+Query Parameters:
+  period: string (1d, 7d, 30d, 90d, 1y, all)
+
+Response: 200
+{
+  "period": "30d",
+  "totalReturn": 3.5,
+  "totalReturnPercent": 3.5,
+  "bestPerformer": "BTC",
+  "worstPerformer": "ADA",
+  "sharpeRatio": 1.2,
+  "volatility": 25.3
+}

@@ -1,0 +1,17 @@
+GET /portfolio/assets
+Authorization: Bearer <token>
+
+Response: 200
+{
+  "assets": [
+    {
+      "symbol": "BTC",
+      "quantity": 0.5,
+      "averagePrice": 45000.00,
+      "currentPrice": 45230.50,
+      "totalValue": 22615.25,
+      "gainLoss": 615.25,
+      "gainLossPercent": 2.8
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+POST /auth/refresh
+Authorization: Bearer <token>
+
+Response: 200
+{
+  "token": "new-jwt-token",
+  "expiresIn": "7d"
+}

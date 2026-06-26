@@ -1,0 +1,16 @@
+POST /auth/register
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "securepassword123",
+  "fullName": "John Doe"
+}
+
+Response: 201
+{
+  "userId": "user-id",
+  "email": "user@example.com",
+  "token": "jwt-token",
+  "expiresIn": "7d"
+}

@@ -1,0 +1,27 @@
+# Database
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=digital_daily_market
+DB_USER=postgres
+DB_PASSWORD=postgres
+
+# JWT
+JWT_SECRET=your-secret-key-change-in-production
+JWT_EXPIRY=7d
+
+# API
+API_PORT=3001
+API_URL=http://localhost:3001
+
+# Exchange APIs
+BINANCE_API_KEY=your-key
+BINANCE_API_SECRET=your-secret
+
+KRAKEN_API_KEY=your-key
+KRAKEN_API_SECRET=your-secret
+
+MOONPAY_API_KEY=your-key
+MOONPAY_SECRET_KEY=your-secret
+
+COINMAMA_API_KEY=your-key
+COINMAMA_SECRET_KEY=your-secret

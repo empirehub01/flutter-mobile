@@ -1,0 +1,27 @@
+GET /portfolio/history
+Authorization: Bearer <token>
+
+Query Parameters:
+  type: string (BUY, SELL, DIVIDEND)
+  symbol: string (optional)
+  limit: number (default: 50)
+  offset: number (default: 0)
+
+Response: 200
+{
+  "transactions": [
+    {
+      "transactionId": "tx-id",
+      "type": "BUY",
+      "symbol": "BTC",
+      "quantity": 0.5,
+      "price": 45000.00,
+      "total": 22500.00,
+      "fee": 22.50,
+      "timestamp": "2026-05-27T12:00:00Z"
+    }
+  ],
+  "total": 150,
+  "limit": 50,
+  "offset": 0
+}

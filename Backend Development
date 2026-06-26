@@ -1,0 +1,19 @@
+cd backend
+
+# Start development server with hot reload
+npm run dev
+
+# Run tests
+npm run test
+
+# Run tests with watch mode
+npm run test:watch
+
+# Lint code
+npm run lint
+
+# Format code
+npm run format
+
+# Build TypeScript
+npm run build

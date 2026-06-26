@@ -1,0 +1,10 @@
+GET /auth/me
+Authorization: Bearer <token>
+
+Response: 200
+{
+  "userId": "user-id",
+  "email": "user@example.com",
+  "fullName": "John Doe",
+  "createdAt": "2026-05-27T12:00:00Z"
+}

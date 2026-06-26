@@ -1,0 +1,15 @@
+GET /market/prices/:symbol
+
+Parameters:
+  symbol: string (BTC, ETH, ADA, etc.)
+
+Response: 200
+{
+  "symbol": "BTC",
+  "price": 45230.50,
+  "change24h": 2.5,
+  "changePercent24h": 5.2,
+  "high24h": 46100.00,
+  "low24h": 44500.00,
+  "timestamp": "2026-05-27T12:00:00Z"
+}

@@ -1,0 +1,23 @@
+GET /market/chart/:symbol
+
+Query Parameters:
+  interval: string (1m, 5m, 15m, 1h, 4h, 1d, 1w, 1M)
+  limit: number (default: 100, max: 500)
+  startTime: number (optional, unix timestamp)
+  endTime: number (optional, unix timestamp)
+
+Response: 200
+{
+  "symbol": "BTC",
+  "interval": "1h",
+  "data": [
+    {
+      "time": 1685101200,
+      "open": 45000.00,
+      "high": 45500.00,
+      "low": 44800.00,
+      "close": 45230.50,
+      "volume": 150.5
+    }
+  ]
+}

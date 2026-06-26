@@ -1,0 +1,14 @@
+
+## Error Responses
+
+All error responses follow this format:
+
+```json
+{
+  "error": {
+    "message": "Error description",
+    "status": 400,
+    "timestamp": "2026-05-27T12:00:00Z",
+    "path": "/api/endpoint"
+  }
+}

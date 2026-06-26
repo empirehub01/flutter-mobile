@@ -1,0 +1,22 @@
+POST /trading/sell
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "symbol": "BTC",
+  "quantity": 0.5,
+  "orderType": "market" | "limit",
+  "limitPrice": 46000.00 (required if orderType is "limit")
+}
+
+Response: 201
+{
+  "orderId": "order-id",
+  "symbol": "BTC",
+  "type": "SELL",
+  "quantity": 0.5,
+  "price": 45230.50,
+  "total": 22615.25,
+  "status": "FILLED",
+  "timestamp": "2026-05-27T12:00:00Z"
+}
